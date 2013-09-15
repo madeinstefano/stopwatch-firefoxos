@@ -12,13 +12,14 @@
   <body>
 
     <div id="stopwatch-wrapper">
+      <canvas id="ring"></canvas>
       <div id="display">
-        <span id="hour-part"></span>
-        <span id="minute-part"></span>
-        <span id="second-part"></span>
-        <span id="mili-part"></span>
+        <span id="hour-part" style="display:none">00</span>
+        <span id="minute-part" style="display:none">00</span>
+        <span id="second-part">00</span>
+        <span id="mili-part">00</span>
       </div>
-      <button id="action"></button>
+      <span id="action">x</span>
     </div>
   
     <script src="resources/script.js"></script>
