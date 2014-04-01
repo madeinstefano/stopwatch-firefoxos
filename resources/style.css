@@ -1,14 +1,22 @@
 body{
   margin:0;
-  background-color:#2d2d2d;
+  background-color:#1a1a1a;
   font-family:arial;
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  user-select:none;
+  text-align:center;
+}
+
+*{
+  outline:0;
 }
 
 #stopwatch-wrapper{
-  background-color:red;
-  width:300px;
-  height:300px;
+  width:70%;
+  height:70%;
   position:relative;
+  margin: 0 auto;
 }
 
 canvas{
@@ -17,31 +25,66 @@ canvas{
   display:block;
   position:absolute;
 }
-
+#command{
+  position:absolute;
+  top:70%;
+  width:100%;
+  left:0;
+  color:#fff;
+  font-size:110%;
+  text-align:center;
+}
+#command b{
+  color:#F2243C;
+}
 #display{
   position:absolute;
-  top:35%;
-  left:20%;
-  right:20%;
-  bottom:35%;
+  top:30%;
+  left:0%;
+  right:0%;
+  bottom:30%;
   z-index:2;
-  background-color:orange;
   text-align:center;
-  
-  width:60%;
+  font-size:0;
 }
 #display span{
+  color:#fff;
   position:relative;
-  background-color:orange;
+  width:35%;
   display:inline-block;
+  text-align:center;
+  font-family:monospace;
 }
 #second-part::after,
 #minute-part::after,
 #hour-part::after{
-  font-size:20%;
-  background-color:green;
+  font-size:30%;
+  line-height:auto!important;
+  vertical-align:top;
+  margin-top:-35%;
   position:absolute;
 }
 #second-part::after{content:'s';}
 #minute-part::after{content:'m';}
 #hour-part::after{content:'h';}
+
+#reset{
+  position:absolute;
+  bottom:5%;
+  right:5%;
+  border:2px solid #fff;
+  border-radius:50%;
+  color:#fff;
+  font-size:110%;
+  text-align:center;
+  text-decoration: none;
+  display:table;
+  vertical-align: middle;
+}
+#reset:after{
+  content:'Reset';
+  display:table-cell;
+  vertical-align: middle;
+  width:100%;
+  height: 100%;
+}

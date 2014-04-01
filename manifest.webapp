@@ -1,0 +1,20 @@
+{
+  "version": "1.1",
+  "name": "Stopwatch",
+  "description": "The simplest stopwatch ever!",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/resources/icon_16.png",
+    "32": "/resources/icon_32.png",
+    "48": "/resources/icon_48.png",
+    "64": "/resources/icon_64.png",
+    "128": "/resources/icon_128.png"
+  },
+  "developer": {
+    "name": "Stéfano Stypulkowski",
+    "url": "http://szanata.com"
+  },
+  "default_locale": "en",
+  "orientation": ["portrait"],
+  "installs_allowed_from": ["*"]
+}
